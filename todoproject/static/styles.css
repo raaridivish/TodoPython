@@ -1,0 +1,14 @@
+.banner{
+    background-color:DarkOrange;
+    width:100%;
+    height:200px;
+    margin-bottom:50px;
+    color:DarkGreen;
+}
+
+.banner-text{
+    top:15%;
+    left:45%;
+    position:absolute;
+    transform:transform;
+}

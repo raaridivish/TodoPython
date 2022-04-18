@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Homepage</h1>
+<!--{% for i in tasklist %}-->
+<!--{{i.id}}-&ndash;&gt;{{i.name}}-&ndash;&gt;{{i.priority}}-->
+<!--{% endfor %}-->
+<div class="form-group">
+    <input type="text" name="taskname" class="form-control" placeholder="Task Name">
+</div>
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="priority" placeholder="Priority No.">
+    <input type="submit" name="Submit">
+</form>
+{% endblock %}
